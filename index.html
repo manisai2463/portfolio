@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M M S Raghava | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css?v=3">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js" class="particles-bg"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass" id="navbar">
+        <div class="nav-content">
+            <a href="#hero" class="logo">M.M.S Raghava</a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-divider"></div>
+                <a href="./assets/Mani Tech CV.pdf" title="Download Technical CV" class="cv-btn">Technical CV <i class="fas fa-download"></i></a>
+                <a href="./assets/Mani General CV.pdf" title="Download General CV" class="cv-btn" style="border-color: var(--neon-purple); color: var(--neon-purple);">General CV <i class="fas fa-download"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle glass-card">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-text-content">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="glitch" data-text="Mucharla Manikanta Sai Raghava">Mucharla Manikanta<br>Sai Raghava</h1>
+                    <h2 class="tagline">Full Stack Developer | MERN Stack | Problem Solver</h2>
+                    <div class="typing-container">
+                        <span class="static-text">I am a </span><span class="typed-text"></span><span class="cursor-blink">|</span>
+                    </div>
+                    <div class="hero-btns mt-4">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-content glass-card">
+                    <div class="about-image-container">
+                        <img src="./images/profile.jpeg" alt="Profile" class="about-profile-img" onerror="this.src='https://via.placeholder.com/400x400/050510/bd00ff?text=Save+image+as+profile.png'">
+                    </div>
+                    <div class="about-text">
+                        <p>I am a B.Tech Computer Science student at <strong>Lovely Professional University</strong> with a strong interest in full-stack development and building real-world applications. I work primarily with the MERN stack and enjoy developing systems that solve practical problems.</p>
+                        <p>I have hands-on experience in designing responsive user interfaces, and implementing real-time features. My projects reflect my focus on functionality, user experience, and scalable design rather than just basic implementations.</p>
+                        <p>I actively strengthen my problem-solving skills through Data Structures and Algorithms practice and continuously explore new technologies to improve my development approach. I aim to build impactful, efficient, and user-focused software systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">Java</div>
+                            <div class="skill-node">JavaScript</div>
+                            <div class="skill-node">TypeScript</div>
+                            <div class="skill-node">Python</div>
+                            <div class="skill-node">C++</div>
+                            <div class="skill-node">C</div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-laptop-code"></i> Web Technologies</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">HTML</div>
+                            <div class="skill-node">CSS</div>
+                            <div class="skill-node">Next.js</div>
+                            <div class="skill-node">React.js</div>
+                            <div class="skill-node">Tailwind CSS</div>
+                            <div class="skill-node">Bootstrap</div>
+                            <div class="skill-node">Socket.IO</div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-server"></i> Backend & Runtime</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">Node.js</div>
+                            <div class="skill-node">Express.js</div>
+                            <div class="skill-node">JWT</div>
+                            <div class="skill-node">OAuth</div>
+                            <div class="skill-node">REST APIs</div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">MongoDB</div>
+                            <div class="skill-node">MySQL</div>
+                            <div class="skill-node">PHP</div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">GitHub</div>
+                            <div class="skill-node">VS Code</div>
+                            <div class="skill-node">Postman</div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-users-cog"></i> Soft Skills</h3>
+                        <div class="skill-timeline">
+                            <div class="skill-node">Adaptability</div>
+                            <div class="skill-node">Critical Thinking</div>
+                            <div class="skill-node">Team Management</div>
+                            <div class="skill-node">Conflict Resolution</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                
+                <!-- Project Filter -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mern">MERN Stack</button>
+                    <button class="filter-btn" data-filter="api">API</button>
+                </div>
+
+                <div class="projects-list">
+                    <!-- Project 1: BookMyRide -->
+                    <div class="project-card list-mode glass-card" data-category="mern">
+                        <div class="proj-header">
+                            <span class="proj-label">PROJECT 01</span>
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-info" style="max-width: 45%;">
+                                <h3 class="proj-title">BookMyRide</h3>
+                                <h4 class="proj-subtitle">Full-Stack Ride Booking Platform</h4>
+                                <p class="proj-desc">A comprehensive full-stack ride-booking platform that features real-time cab tracking, an interactive seat selection module, dynamic fare calculation, and a robust admin dashboard for managing users, drivers, and ride history.</p>
+                                
+                                <div class="project-tech mt-4">
+                                    <span><i class="fas fa-database"></i> MongoDB</span>
+                                    <span><i class="fab fa-node-js"></i> Express</span>
+                                    <span><i class="fab fa-react"></i> React</span>
+                                    <span><i class="fab fa-node"></i> Node.js</span>
+                                </div>
+                                <div class="proj-footer mt-4">
+                                    <a href="https://github.com/manisai2463/RealTimeCab" target="_blank" class="source-link"><i class="fas fa-code-branch"></i> Source <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="proj-image-preview">
+                                <img src="./images/bookmyride.png" alt="BookMyRide Dashboard" onerror="this.src='https://via.placeholder.com/600x400/050510/00f0ff?text=Save+image+as+bookmyride.png'">
+                            </div>
+
+                            <div class="proj-stats">
+                                <div class="stat-item">
+                                    <span class="stat-val">Real-Time</span>
+                                    <span class="stat-name">Features</span>
+                                </div>
+                                <div class="stat-item mt-4">
+                                    <span class="stat-val">Dynamic</span>
+                                    <span class="stat-name">Fare Calculation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-watermark">01</div>
+                    </div>
+
+                    <!-- Project 2: FounderForge -->
+                    <div class="project-card list-mode glass-card" data-category="mern">
+                        <div class="proj-header">
+                            <span class="proj-label">PROJECT 02</span>
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-info" style="max-width: 45%;">
+                                <h3 class="proj-title">FounderForge</h3>
+                                <h4 class="proj-subtitle">Entrepreneurial Networking Platform</h4>
+                                <p class="proj-desc">An innovative networking platform tailored specifically for entrepreneurs and startup founders. It includes real-time messaging, professional profile mapping, collaboration tools, and community forums aimed at building successful ventures.</p>
+                                
+                                <div class="project-tech mt-4">
+                                    <span><i class="fab fa-react"></i> React</span>
+                                    <span><i class="fab fa-node"></i> Node.js</span>
+                                    <span><i class="fas fa-network-wired"></i> Socket.io</span>
+                                </div>
+                                <div class="proj-footer mt-4">
+                                    <a href="https://github.com/manisai2463/Entrepreneurial-Network-web-development" target="_blank" class="source-link"><i class="fas fa-code-branch"></i> Source <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="proj-image-preview">
+                                <img src="./images/founderforge.png" alt="FounderForge Dashboard" onerror="this.src='https://via.placeholder.com/600x400/050510/bd00ff?text=Save+image+as+founderforge.png'">
+                            </div>
+
+                            <div class="proj-stats">
+                                <div class="stat-item">
+                                    <span class="stat-val" style="color:var(--neon-blue);">WebSockets</span>
+                                    <span class="stat-name">Real-Time Chat</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-watermark">02</div>
+                    </div>
+
+                    <!-- Project 3: Custom Browser -->
+                    <div class="project-card list-mode glass-card" data-category="api">
+                        <div class="proj-header">
+                            <span class="proj-label">PROJECT 03</span>
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-info" style="max-width: 45%;">
+                                <h3 class="proj-title">Custom Browser</h3>
+                                <h4 class="proj-subtitle">AI Chat-based Book Discovery</h4>
+                                <p class="proj-desc">A specialized chat-based book discovery application powered by the Google Books API. It features a conversational user interface that allows users to seamlessly search for literature, explore summaries, and receive tailored book recommendations.</p>
+                                
+                                <div class="project-tech mt-4">
+                                    <span><i class="fab fa-js"></i> JavaScript</span>
+                                    <span><i class="fas fa-book"></i> Google Books API</span>
+                                    <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                                </div>
+                                <div class="proj-footer mt-4">
+                                    <a href="https://github.com/manisai2463/AI-Project" target="_blank" class="source-link"><i class="fas fa-code-branch"></i> Source <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="proj-image-preview">
+                                <img src="./images/aibrowser.png" alt="Custom Browser" onerror="this.src='https://via.placeholder.com/600x400/050510/00ff9d?text=Save+image+as+aibrowser.png'">
+                            </div>
+
+                            <div class="proj-stats">
+                                <div class="stat-item">
+                                    <span class="stat-val" style="color:#00ff9d;">REST API</span>
+                                    <span class="stat-name">Integration</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-watermark">03</div>
+                    </div>
+
+                    <!-- Project 4: Secure File Manager -->
+                    <div class="project-card list-mode glass-card" data-category="api">
+                        <div class="proj-header">
+                            <span class="proj-label">PROJECT 04</span>
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-info" style="max-width: 45%;">
+                                <h3 class="proj-title">Secure File Manager</h3>
+                                <h4 class="proj-subtitle">Browser-Based Local Storage System</h4>
+                                <div class="proj-desc">
+                                    <p style="margin-bottom: 1rem;">A lightweight, browser-based file management system built using Vanilla JavaScript. This project handles user authentication, file uploads, downloads, deletions, and a complete audit logging system natively stored using localStorage.</p>
+                                </div>
+                                
+                                <div class="project-tech mt-4">
+                                    <span><i class="fab fa-html5"></i> HTML5</span>
+                                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                                    <span><i class="fab fa-js-square"></i> Vanilla JS</span>
+                                    <span><i class="fas fa-hdd"></i> LocalStorage API</span>
+                                </div>
+                                <div class="proj-footer mt-4">
+                                    <a href="https://github.com/manisai2463/OS-Project" target="_blank" class="source-link"><i class="fas fa-code-branch"></i> Source <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="proj-image-preview">
+                                <img src="./images/securefilemanager.png" alt="Secure File Manager" onerror="this.src='https://via.placeholder.com/600x400/050510/ffb300?text=Save+image+as+securefilemanager.png'">
+                            </div>
+
+                            <div class="proj-stats">
+                                <div class="stat-item">
+                                    <span class="stat-val" style="color:#ffb300;">Vanilla JS</span>
+                                    <span class="stat-name">Core</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-watermark">04</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Training -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience & <span>Certifications</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-date">Jun 2025 - Jul 2025</div>
+                        <h3>Data Structures & Algorithms Training</h3>
+                        <h4>Board Infinity</h4>
+                        <p>Focus on problem solving, algorithms, and built a fully functional Snake Game project.</p>
+                        <button onclick="openCertModal('1zX90stXTAam5Skx_GvtPVohKlnCqbJaF')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-certificate"></i> View Certificate</button>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-date">Feb 2026</div>
+                        <h3>Oracle Certified Foundations Associate</h3>
+                        <h4>Oracle Data Platform 2025</h4>
+                        <p>Certified in deploying and managing data infrastructure on Oracle Cloud.</p>
+                        <button onclick="openCertModal('19Z0UusOloKb0a6VjNWXOmOlEecrYh97V')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-certificate"></i> View Certificate</button>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-date">Apr 2025</div>
+                        <h3>Cloud Computing</h3>
+                        <h4>NPTEL</h4>
+                        <p>Comprehensive study of cloud computing architectures and deployment models.</p>
+                        <button onclick="openCertModal('1wREspV7Tv1zX8IvZXo0K3q_NAjq__Dx1')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-certificate"></i> View Certificate</button>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-date">Nov 2023</div>
+                        <h3>Responsive Web Design</h3>
+                        <h4>FreeCodeCamp</h4>
+                        <p>Mastered building mobile-first responsive interfaces using HTML and CSS.</p>
+                        <button onclick="openCertModal('1fDRRDJ6yzSWXuYLUB3Nxx0NdL24b_2PM')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-certificate"></i> View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Activities -->
+        <section id="leadership" class="section">
+            <div class="container">
+                <h2 class="section-title">Leadership & <span>Activities</span></h2>
+                <div class="activities-grid">
+                    <div class="activity-card glass-card">
+                        <div class="activity-icon"><i class="fas fa-code-branch"></i></div>
+                        <div class="activity-date">Feb 2024</div>
+                        <h3>Hackathon Participant</h3>
+                        <h4>Code-A-Haunt (Coding Blocks, LPU)</h4>
+                        <p>Built a solution in a 24-hour hackathon, collaborating in a fast-paced team and applying real-time problem-solving.</p>
+                        <button onclick="openCertModal('1UzIudI-WcOdNQCY2hOkVTl2Ef7EV4Tl-')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-award"></i> View Certificate</button>
+                    </div>
+                    <div class="activity-card glass-card">
+                        <div class="activity-icon"><i class="fas fa-hands-helping"></i></div>
+                        <div class="activity-date">Jul 2024</div>
+                        <h3>Community Development Volunteer</h3>
+                        <h4>Vasavya Mahila Mandali</h4>
+                        <p>Contributed to elderly care initiatives at an old age home, supporting social impact and community service.</p>
+                        <button onclick="openCertModal('15dbqguaRfAczXWFbl_67mixyIr09WodG')" class="btn btn-sm btn-outline mt-4"><i class="fas fa-award"></i> View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education <span>Journey</span></h2>
+                <div class="education-grid">
+                    <div class="edu-card glass-card">
+                        <div class="edu-year">2023 - Present</div>
+                        <h3>B.Tech CSE</h3>
+                        <h4>Lovely Professional University</h4>
+                        <p class="edu-location">Phagwara, Punjab</p>
+                        <p class="edu-score mt-4">CGPA: 6.30</p>
+                    </div>
+                    <div class="edu-card glass-card">
+                        <div class="edu-year">2022 - 2023</div>
+                        <h3>Intermediate</h3>
+                        <h4>Narayana Junior College</h4>
+                        <p class="edu-location">Vijayawada, Andhra Pradesh</p>
+                        <p class="edu-score mt-4">Scores: 76.9%</p>
+                    </div>
+                    <div class="edu-card glass-card">
+                        <div class="edu-year">2020 - 2021</div>
+                        <h3>Matriculation</h3>
+                        <h4>Sri Viswasanthi Institutions</h4>
+                        <p class="edu-location">Vijayawada, Andhra Pradesh</p>
+                        <p class="edu-score mt-4">Scores: 91.6%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="contact-wrapper glass-card">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 9059926935</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>mani.sai2463@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/manisai2463/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/manisai2463" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder="Your Name">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder="Your Email">
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 glass">
+        <div class="container text-center py-4">
+            <p>&copy; 2026 Mucharla Manikanta Sai Raghava. Designed & Built with <i class="fas fa-heart" style="color: #ff3366;"></i></p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="iframe-container">
+                <iframe id="certFrame" src="" width="100%" height="100%" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Viewer Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content glass-card image-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="image-container">
+                <img id="modalImage" src="" alt="Project Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Particles Core -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
